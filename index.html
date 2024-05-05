@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>gmail</li>
+            <li>Image</li>
+        </ul>
+    </nav>
+    <section>
+        <div class="main">
+    <img src="google.png" alt="" srcset="">
+    <div class="searchbar">
+        <input type="text" class="query" value="">
+        <div class="icon">
+             <div> <img src="search.png" alt="" srcset=""></div>
+        <div> <img src="mic.png" alt="" srcset=""></div>
+            </div>
+    </div>
+    <div class="button">
+        <button class="searchbtn">Google Search</button>
+    </div>
+</div>
+</section>
+<script>
+    let query = document.querySelector('.query');
+    let searchbtn = document.querySelector('.searchbtn');
+    searchbtn.onclick =function(){
+        let url = 'https://www.google.com/search?q='+query.value;
+        window.open(url,"_self");
+    }
+</script>
+</body>
+</html>
